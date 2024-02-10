@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+    background-color: beige;
+    font-family: 'Arial', sans-serif; /* You can change the font-family */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #f5f5dc; /* Beige Header Background Color */
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Add a border around the table */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f5f5dc; /* Header background color */
+}
+
+/* Hover effect on table rows */
+tr:hover {
+    background-color: #f5f5f5;
+}
+/* List Styles */
+dl {
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 1.2em; /* Increase font size */
+    margin-bottom: 5px; /* Reduce bottom margin */
+}
+
+dd {
+    margin-bottom: 10px;
+    line-height: 1.5; /* Increase line height for better readability */
+}
+
+
+/* Image Styles */
+img {
+    display: block; /* Center the image within its container */
+    margin: 0 auto; /* Center the image horizontally */
+    width: 300px; /* Fixed width */
+    height: auto; /* Height scales proportionally */
+    margin-bottom: 20px;
+}
+
+/* Figure Caption Styles */
+figcaption {
+    text-align: center; /* Center the text within the caption */
+}
+
+/* Counter Styles */
+#counter {
+    font-size: 2.5em; /* Increase font size */
+    font-weight: bold;
+    text-align: center; /* Center the counter */
+    margin-bottom: 20px; /* Add some space below the counter for better aesthetics */
+}
+

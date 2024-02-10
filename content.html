@@ -1,0 +1,78 @@
+<!-- content.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S + K</title>
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+    <!-- Favicon -->
+    <link rel="icon" href="images/sk.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header with links to other pages -->
+    <header>
+        <h1>Happy Valentine's Day</h1>
+        <nav>
+            <ul>
+                <li><a href="content.html">Home</a></li>
+                <li><a href="reasonslist.html">Reasons I love you</a></li>
+                <li><a href="ourpictures.html">Pictures of us</a></li>
+                <li><a href="myfavpics.html">Some of MY favorite pictures</a></li>
+                <li><a href="songsofyou.html">Songs that remind me of you</a></li>
+                <li><a href="thelist.html">The list...</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <!-- Display the live relationship counter (timer) -->
+        <div id="counter"></div>
+
+        <!-- Script for the timer -->
+        <script>
+            // Function to display the live relationship counter (timer)
+            function displayRelationshipCounter() {
+                var startDate = new Date("December 4, 2021"); // Placeholder start date
+
+                // Update the counter every second
+                setInterval(function () {
+                    var currentDate = new Date();
+                    var timeDifference = currentDate - startDate;
+
+                    // Calculate years, months, days, hours, minutes, and seconds
+                    var years = Math.floor(timeDifference / (365.25 * 24 * 60 * 60 * 1000));
+                    var months = Math.floor((timeDifference % (365.25 * 24 * 60 * 60 * 1000)) / (30.44 * 24 * 60 * 60 * 1000));
+                    var days = Math.floor((timeDifference % (30.44 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
+                    var hours = Math.floor((timeDifference % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                    var minutes = Math.floor((timeDifference % (60 * 60 * 1000)) / (60 * 1000));
+                    var seconds = Math.floor((timeDifference % (60 * 1000)) / 1000);
+
+                    // Display the counter
+                    var counterElement = document.getElementById("counter");
+                    if (counterElement) {
+                        counterElement.innerHTML =
+                            "Together for: " +
+                            years + " years, " +
+                            months + " months, " +
+                            days + " days, " +
+                            hours + " hours, " +
+                            minutes + " minutes, " +
+                            seconds + " seconds";
+                    }
+                }, 1000); // Update every second
+            }
+
+            // Call the function to start the timer
+            displayRelationshipCounter();
+        </script>
+
+    <img src="images/gif/2cats.gif" alt="Description of the picture">
+</body>
+
+</html>
+
+
