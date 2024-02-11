@@ -211,3 +211,24 @@ footer {
 .footer-social-icons a:hover {
     color: #ff1493; /* Deep pink color on hover */
 }
+
+/* styles.css */
+
+.container.mt-5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between images as needed */
+    padding: 20px; /* Add padding for spacing inside the card */
+    background-color: transparent;
+    border-radius: 10px; /* Add rounded corners for a card-like appearance */
+}
+
+.container.mt-5 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add rounded corners for images */
+}
+
+.container.mt-5 figure {
+    flex: 1 0 calc(33.333% - 20px); /* Adjust the width of each figure as needed */
+}
