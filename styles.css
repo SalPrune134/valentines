@@ -1,31 +1,59 @@
 /* Global Styles */
 body {
     background-color: beige;
-    font-family: 'Arial', sans-serif; /* You can change the font-family */
+    font-family: 'Dancing Script', cursive, sans-serif; /* Use Dancing Script font */
     margin: 0;
     padding: 0;
 }
 
 /* Header Styles */
 header {
-    background-color: #f5f5dc; /* Beige Header Background Color */
+    background-color: #f5f5dc;
     padding: 15px;
     text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #343a40;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-nav ul li {
+nav li {
     display: inline;
     margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #5a6268;
+    color: #ffffff;
 }
 
 /* Section Styles */
 section {
     padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
 }
 
 /* Table Styles */
@@ -33,59 +61,153 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    border: 1px solid #ddd; /* Add a border around the table */
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
     border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
+    padding: 15px;
+    text-align: center;
 }
 
 th {
-    background-color: #f5f5dc; /* Header background color */
+    background-color: #f5f5dc;
 }
 
-/* Hover effect on table rows */
+/* Alternate row colors for better readability */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
 tr:hover {
     background-color: #f5f5f5;
 }
+
 /* List Styles */
 dl {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    border-left: 3px solid #007bff;
+    padding-left: 20px;
 }
 
 dt {
     font-weight: bold;
-    font-size: 1.2em; /* Increase font size */
-    margin-bottom: 5px; /* Reduce bottom margin */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007bff;
 }
 
 dd {
-    margin-bottom: 10px;
-    line-height: 1.5; /* Increase line height for better readability */
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-left: 15px; /* Add left indentation */
 }
+
+/* Add a subtle box shadow to the list items */
+dt, dd {
+    transition: box-shadow 0.3s;
+}
+
+/* Highlight on hover for better user experience */
+dt:hover, dd:hover {
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3);
+}
+
 
 
 /* Image Styles */
 img {
-    display: block; /* Center the image within its container */
-    margin: 0 auto; /* Center the image horizontally */
-    width: 300px; /* Fixed width */
-    height: auto; /* Height scales proportionally */
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
     margin-bottom: 20px;
 }
 
+/* Add this style for the image section */
+.image-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: transparent;
+}
+
+/* Style for each image card */
+.image-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.image-caption {
+    padding: 15px;
+    text-align: center;
+    background-color: #f8f9fa; /* Light background color */
+    border-top: 1px solid #ddd;
+}
+
+
 /* Figure Caption Styles */
 figcaption {
-    text-align: center; /* Center the text within the caption */
+    text-align: center;
 }
 
 /* Counter Styles */
 #counter {
-    font-size: 2.5em; /* Increase font size */
+    font-size: 2.5em;
     font-weight: bold;
-    text-align: center; /* Center the counter */
-    margin-bottom: 20px; /* Add some space below the counter for better aesthetics */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+
+/* Updated Footer Styles */
+footer {
+    background-color: #ffcccc; /* Light pink background color */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Border at the top of the footer */
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.footer-text {
+    color: #800080; /* Purple text color */
+    font-size: 1.2em;
+}
+
+.footer-link {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
+
+.footer-social-icons {
+    margin-top: 15px;
+}
+
+.footer-social-icons a {
+    color: #007bff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-social-icons a:hover {
+    color: #ff1493; /* Deep pink color on hover */
+}
