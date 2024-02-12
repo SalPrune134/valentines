@@ -10,6 +10,15 @@
     <!-- Favicon -->
     <link rel="icon" href="images/sk.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+            <!-- Linking the JavaScript file -->
+            <script>
+                function toggleNav() {
+                    var navLinks = document.getElementById("navLinks");
+                    navLinks.style.display = (navLinks.style.display === "block") ? "none" : "block";
+                }
+                
+                
+                        </script>
 </head>
 
 <body>
@@ -17,7 +26,8 @@
     <header>
         <h1>Happy Valentine's Day</h1>
         <nav>
-            <ul>
+            <div class="menu-icon" onclick="toggleNav()" id="navButton">&#8801;</div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="content.html">Home</a></li>
                 <li><a href="reasonslist.html">Reasons I love you</a></li>
                 <li><a href="ourpictures.html">Pictures of us</a></li>
