@@ -10,9 +10,15 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #f5f5dc;
+    background-color: #C62828;
     padding: 15px;
     text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff; /* Set text color to white */
+    display: inline-block; /* Ensure the text is centered */
 }
 
 h2 {
@@ -24,7 +30,7 @@ h2 {
 /* Navigation Bar Styles */
 /* Navigation Bar Styles */
 nav {
-    background-color: #343a40;
+    background-color: #C62828;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -113,7 +119,7 @@ tr:hover {
 /* List Styles */
 dl {
     margin-bottom: 30px;
-    border-left: 3px solid #007bff;
+    border-left: 3px solid #C62828;
     padding-left: 20px;
 }
 
@@ -205,6 +211,9 @@ dt:hover, dd:hover {
 
 .popup-content {
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
