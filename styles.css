@@ -60,7 +60,10 @@ nav {
 }
 
 .nav-links li {
-    margin-right: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .nav-links a {
@@ -70,6 +73,7 @@ nav {
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s;
     display: block;
+    text-align: center; /* Center the links */
 }
 
 .nav-links a:hover {
@@ -346,4 +350,10 @@ footer {
 
 .container.mt-5 figure {
     flex: 1 0 calc(33.333% - 20px); /* Adjust the width of each figure as needed */
+}
+
+/* Add these styles to your existing styles.css file */
+/* Add a subtle box shadow to the list items */
+ul li {
+    transition: box-shadow 0.3s;
 }
