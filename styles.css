@@ -54,7 +54,7 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #343a40;
+    background-color: #C62828;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
@@ -73,7 +73,7 @@ nav {
 }
 
 .nav-links a:hover {
-    background-color: #5a6268;
+    background-color: red;
     color: #ffffff;
 }
 
